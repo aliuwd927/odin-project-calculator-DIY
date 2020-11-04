@@ -16,6 +16,15 @@ body{
 }
 
 .calculatorContainer{
+    height: 100%;
+    width: 25%;
+    display: grid;
     border-style: solid;
     border-color: green;
+}
+
+.keyInput{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
 }
