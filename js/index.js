@@ -14,7 +14,13 @@ keyInputs.addEventListener('click', (e)=>{
         dataInput.push(e.target.textContent);
         displayOutput.textContent = dataInput.join('');
     }else if(e.target.classList.contains('key')){
-        
+        if(e.target.innerHTML === 'Del'){
+            dataInput.pop();
+            displayOutput.textContent = dataInput.join('');
+        }else if(e.target.innerHTML === 'CE'){
+            dataInput = [];
+            displayOutput.textContent = dataInput;
+        }
     }
     console.log(dataInput);
 });
