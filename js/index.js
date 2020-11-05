@@ -24,5 +24,12 @@ keyInputs.addEventListener('click', (e)=>{
     }else if(e.target.classList.contains('equal')){
         //displayOutput.textContent = dataInput.join('');
     }
+
+
+
+
+    
+
+    //Do Not Remove
     console.log(dataInput);
 });
