@@ -21,6 +21,8 @@ keyInputs.addEventListener('click', (e)=>{
             dataInput = [];
             displayOutput.textContent = dataInput;
         }
+    }else if(e.target.classList.contains('equal')){
+        //displayOutput.textContent = dataInput.join('');
     }
     console.log(dataInput);
 });
