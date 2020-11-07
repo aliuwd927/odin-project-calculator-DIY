@@ -19,8 +19,9 @@ body{
     height: 100%;
     width: 25%;
     display: grid;
+    margin: 0 auto;
     border-style: solid;
-    border-color: green;s
+    border-color: green;
 }
 
 .keyInput{
