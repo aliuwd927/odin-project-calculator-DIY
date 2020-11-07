@@ -22,7 +22,9 @@ keyInputs.addEventListener('click', (e)=>{
             displayOutput.textContent = dataInput;
         }
     }else if(e.target.classList.contains('equal')){
-        //displayOutput.textContent = dataInput.join('');
+        
+        let joinData = dataInput.join('');
+        console.log(joinData);
     }
 
 
