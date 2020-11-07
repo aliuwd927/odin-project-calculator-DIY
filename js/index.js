@@ -22,7 +22,6 @@ keyInputs.addEventListener('click', (e)=>{
             displayOutput.textContent = dataInput;
         }
     }else if(e.target.classList.contains('equal')){
-        
         let joinData = dataInput.join('');
         console.log(joinData);
     }
