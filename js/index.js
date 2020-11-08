@@ -19,7 +19,7 @@ keyInputs.addEventListener('click', (e)=>{
                e.target.textContent === '*' ||
                e.target.textContent === '/'
               ){
-                
+                //when operator is click pass to equal to execute
             }
 
     }else if(e.target.classList.contains('key')){
@@ -43,7 +43,7 @@ function operatorLogic(){
 };
 
 function addition(num1,num2){
-    return num1 + num2;
+    console.log(num1 + num2);
 }
 
 function subtraction(num1, num2){
