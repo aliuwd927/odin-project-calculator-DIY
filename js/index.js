@@ -22,15 +22,13 @@ keyInputs.addEventListener('click', (e)=>{
             displayOutput.textContent = dataInput;
         }
     }else if(e.target.classList.contains('equal')){
-        let joinData = dataInput.join('');
-        console.log(joinData);
+            operatorLogic();
     }
-
-
-
-
-    
-
     //Do Not Remove
     console.log(dataInput);
 });
+
+function operatorLogic(){
+    let joinData = dataInput.join('');
+    console.log(joinData);
+};
