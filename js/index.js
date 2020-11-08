@@ -14,6 +14,14 @@ keyInputs.addEventListener('click', (e)=>{
     }else if(e.target.classList.contains('operator')){
         dataInput.push(e.target.textContent);
         displayOutput.textContent = dataInput.join('');
+            if(e.target.textContent === '+' ||
+               e.target.textContent === '-' ||
+               e.target.textContent === '*' ||
+               e.target.textContent === '/'
+              ){
+                
+            }
+
     }else if(e.target.classList.contains('key')){
         if(e.target.innerHTML === 'Del'){
             dataInput.pop();
