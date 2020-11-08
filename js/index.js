@@ -1,6 +1,7 @@
 const displayInput = document.querySelector('.displayInput');
 const displayOutput = document.querySelector('.displayOutput');
 const keyInputs = document.querySelector('.keyInput');
+const operatorKeys = document.querySelectorAll('.operator');
 
 let dataInput = [];
 
@@ -32,3 +33,19 @@ function operatorLogic(){
     let joinData = dataInput.join('');
     console.log(joinData);
 };
+
+function addition(num1,num2){
+    return num1 + num2;
+}
+
+function subtraction(num1, num2){
+    return num1 - num2;
+}
+
+function division(num1, num2){
+    return num1 / num2;
+}
+
+function multiplication(num1, num2){
+    return num1 * num2;
+}
