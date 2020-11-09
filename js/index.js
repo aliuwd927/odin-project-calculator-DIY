@@ -24,7 +24,7 @@ keyInputs.addEventListener('click', (e)=>{
         }
     }else if(e.target.classList.contains('equal')){
             if(dataInput.includes('+')){
-                addition();
+                addition(dataInput.join(''));
             }
     }
     //Do Not Remove
@@ -38,8 +38,8 @@ function operate(operator){
     */  
 };
 
-function addition(){
-    alert();
+function addition(info){
+    console.log(info);
 };
 
 function subtraction(num1, num2){
