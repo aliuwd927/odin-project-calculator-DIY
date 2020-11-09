@@ -36,7 +36,6 @@ function operate(operator){
     let joinData = dataInput.join('');
     console.log(joinData);
     */
-
 };
 
 function addition(info){
