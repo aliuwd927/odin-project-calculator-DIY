@@ -14,14 +14,6 @@ keyInputs.addEventListener('click', (e)=>{
     }else if(e.target.classList.contains('operator')){
         dataInput.push(e.target.textContent);
         displayOutput.textContent = dataInput.join('');
-            if(e.target.textContent === '+' ||
-               e.target.textContent === '-' ||
-               e.target.textContent === '*' ||
-               e.target.textContent === '/'
-              ){
-                //when operator is click pass to equal to execute
-            }
-
     }else if(e.target.classList.contains('key')){
         if(e.target.innerHTML === 'Del'){
             dataInput.pop();
@@ -31,20 +23,24 @@ keyInputs.addEventListener('click', (e)=>{
             displayOutput.textContent = dataInput;
         }
     }else if(e.target.classList.contains('equal')){
-            operatorLogic();
+            if(dataInput.includes('+')){
+                addition();
+            }
     }
     //Do Not Remove
-    console.log(dataInput);
+    //console.log(dataInput);
 });
 
-function operatorLogic(){
+function operate(operator){
+    /*
     let joinData = dataInput.join('');
     console.log(joinData);
+    */  
 };
 
-function addition(num1,num2){
-    console.log(num1 + num2);
-}
+function addition(){
+    
+};
 
 function subtraction(num1, num2){
     return num1 - num2;
