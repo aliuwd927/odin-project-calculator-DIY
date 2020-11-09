@@ -35,11 +35,13 @@ function operate(operator){
     /*
     let joinData = dataInput.join('');
     console.log(joinData);
-    */  
+    */
+
 };
 
 function addition(info){
-    console.log(info);
+    let test = parseInt(info);
+    console.log(test);
 };
 
 function subtraction(num1, num2){
