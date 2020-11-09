@@ -39,7 +39,7 @@ function operate(operator){
 };
 
 function addition(){
-    
+    alert();
 };
 
 function subtraction(num1, num2){
