@@ -24,7 +24,8 @@ keyInputs.addEventListener('click', (e)=>{
         }
     }else if(e.target.classList.contains('equal')){
             if(dataInput.includes('+')){
-                addition(dataInput.join(''));
+                let dataToAdd = dataInput.join('');
+                addition(dataToAdd);
             }
     }
     //Do Not Remove
@@ -38,9 +39,18 @@ function operate(operator){
     */
 };
 
-function addition(info){
-    let test = parseInt(info);
-    console.log(test);
+function addition(toAdd){
+    //console.log(toAdd);
+    let result_raw = toAdd;
+    let result_split = result_raw.split('+');
+    let result0 = parseInt(result_split[0]);
+    let result1 = parseInt(result_split[1]);
+    function addResult(num1,num2){
+        console.log(num1 + num2);
+    };
+
+    addResult(result0, result1);
+
 };
 
 function subtraction(num1, num2){
