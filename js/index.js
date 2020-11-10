@@ -29,13 +29,13 @@ keyInputs.addEventListener('click', (e)=>{
                 dataInput = [];
             }else if(dataInput.includes('-')){
                 let dataToSubtract = dataInput.join('');
-                subtraction();
+                subtraction(dataToSubtract);
             }else if(dataInput.includes('*')){
                 let dataToMultiply = dataInput.join('');
-                multiplication();
+                multiplication(dataToMultiply);
             }else if(dataInput.includes('/')){
                 let dataToDivide = dataInput.join('');
-                division();
+                division(dataToDivide);
             }
     }
     //Do Not Remove
@@ -54,14 +54,35 @@ function addition(toAdd){
     addResult(result0, result1);
 };
 
-function subtraction(){
-    
+function subtraction(toSubtract){
+    let result_raw = toSubtract;
+    let result_split = result_raw.split('-');
+    let result0 = parseInt(result_split[0]);
+    let result1 = parseInt(result_split[1]);
+    function subtractResult(num1,num2){
+        console.log(num1 - num2);
+    };
+    subtractResult(result0, result1);
 }
 
-function division(){
-    
+function division(toDivide){
+    let result_raw = toDivide;
+    let result_split = result_raw.split('/');
+    let result0 = parseInt(result_split[0]);
+    let result1 = parseInt(result_split[1]);
+    function divideResult(num1,num2){
+        console.log(num1 / num2);
+    };
+    divideResult(result0, result1);
 }
 
-function multiplication(){
-    
+function multiplication(toMultiply){
+    let result_raw = toMultiply;
+    let result_split = result_raw.split('*');
+    let result0 = parseInt(result_split[0]);
+    let result1 = parseInt(result_split[1]);
+    function multiplyResult(num1,num2){
+        console.log(num1 * num2);
+    };
+    multiplyResult(result0, result1);
 }
