@@ -2,7 +2,6 @@ const displayInput = document.querySelector('.displayInput');
 const displayOutput = document.querySelector('.displayOutput');
 const keyInputs = document.querySelector('.keyInput');
 const operatorKeys = document.querySelectorAll('.operator');
-
 let dataInput = [];
 
 keyInputs.addEventListener('click', (e)=>{
