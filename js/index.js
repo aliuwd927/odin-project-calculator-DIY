@@ -6,8 +6,6 @@ const operatorKeys = document.querySelectorAll('.operator');
 let dataInput = [];
 
 keyInputs.addEventListener('click', (e)=>{
-    //console.log(e);
-    
     if(e.target.classList.contains('number')){
         dataInput.push(e.target.textContent);
         displayOutput.textContent = dataInput.join('');
@@ -38,8 +36,6 @@ keyInputs.addEventListener('click', (e)=>{
                 division(dataToDivide);
             }
     }
-    //Do Not Remove
-    //console.log(dataInput);
 });
 
 function addition(toAdd){
