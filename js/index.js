@@ -26,18 +26,21 @@ keyInputs.addEventListener('click', (e)=>{
             if(dataInput.includes('+')){
                 let dataToAdd = dataInput.join('');
                 addition(dataToAdd);
+                dataInput = [];
+            }else if(dataInput.includes('-')){
+                let dataToSubtract = dataInput.join('');
+                subtraction();
+            }else if(dataInput.includes('*')){
+                let dataToMultiply = dataInput.join('');
+                multiplication();
+            }else if(dataInput.includes('/')){
+                let dataToDivide = dataInput.join('');
+                division();
             }
     }
     //Do Not Remove
     //console.log(dataInput);
 });
-
-function operate(operator){
-    /*
-    let joinData = dataInput.join('');
-    console.log(joinData);
-    */
-};
 
 function addition(toAdd){
     //console.log(toAdd);
@@ -48,19 +51,17 @@ function addition(toAdd){
     function addResult(num1,num2){
         console.log(num1 + num2);
     };
-
     addResult(result0, result1);
-
 };
 
-function subtraction(num1, num2){
-    return num1 - num2;
+function subtraction(){
+    
 }
 
-function division(num1, num2){
-    return num1 / num2;
+function division(){
+    
 }
 
-function multiplication(num1, num2){
-    return num1 * num2;
+function multiplication(){
+    
 }
